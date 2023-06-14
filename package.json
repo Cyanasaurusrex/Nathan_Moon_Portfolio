@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
   },
   "repository": {
-    "start": "react-scripts start",
     "type": "git",
     "url": "git+https://github.com/Cyanasaurusrex/Nathan_Moon_Portfolio.git"
   },
@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/Cyanasaurusrex/Nathan_Moon_Portfolio/issues"
   },
-  "homepage": "https://github.com/Cyanasaurusrex/Nathan_Moon_Portfolio#readme"
+  "homepage": "https://github.com/Cyanasaurusrex/Nathan_Moon_Portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  }
 }
