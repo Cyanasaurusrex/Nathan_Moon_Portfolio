@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "./components/Navigation";
+import PortfolioContainer from "./components/PortfolioContainer";
 
-const App = () => <Navigation />;
+const App = () => <PortfolioContainer />;
 
 export default App;
