@@ -1,10 +1,7 @@
 "use client";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faXmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect, useRef } from "react";
 import "tailwindcss/tailwind.css";
 
@@ -93,7 +90,9 @@ export default function Navbar() {
         <Link href="/contact-me" className="hover:text-brand-textHover">
           Contact Me
         </Link>
-        <Link href="/resume" className="hover:text-brand-textHover">Resume</Link>
+        <Link href="/resume" className="hover:text-brand-textHover">
+          Resume
+        </Link>
       </div>
 
       {/* Mobile view */}
@@ -127,7 +126,13 @@ export default function Navbar() {
           >
             Contact Me
           </Link>
-          <Link onClick={handleNav} href="/resume" className="hover:text-brand-textHover">Resume</Link>
+          <Link
+            onClick={handleNav}
+            href="/resume"
+            className="hover:text-brand-textHover"
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </nav>

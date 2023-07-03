@@ -1,10 +1,10 @@
 import Navbar from '../components/Navbar'
-
+import Footer from '../components/Footer'
 export default function Home() {
   return (
-    <main className="flex">
+    <main className="flex flex-col">
         <Navbar />
-        <h1 className="font-primary text-brand-textHeader text-2xl m-w-full" />
+        <Footer />
     </main>
   );
 }
