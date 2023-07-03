@@ -1,11 +1,11 @@
-import React from 'react';
+"use client";
+import Link from "next/link";
+import "tailwindcss/tailwind.css";
 
-export default function PortfolioContainer() {
-    return (
-        <div className='icon-container'>
-            <a href="https://github.com/Cyanasaurusrex" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/nathan-moon-17bb5013b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://stackoverflow.com/users/22075676/cyanasaurusrex" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
-        </div>
-    )
+export default function Footer() {
+  return (
+    <footer className="footer--container px-10 py-9">
+      
+    </footer>
+  );
 }
