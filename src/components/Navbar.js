@@ -53,88 +53,93 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav
-      ref={navbarRef}
-      className="navbar--container flex flex-row justify-between px-10 py-5 mx-auto bg-transparent items-center"
-    >
-      <div className="z-50 p-4">
-        <Link
-          href="/"
-          className="text-brand-textHeader font-primary"
-          onClick={closeMenu}
-        >
-          Nathan Moon
-        </Link>
-      </div>
-
-      {/* Default view */}
-      <div
-        onClick={handleNav}
-        className={nav ? "hidden" : "flex sm:hidden p-4 z-50"}
+    <div>
+      {/* Spacer div */}
+      <div className=" pb-20" />
+      {/* Navbar */}
+      <nav
+        ref={navbarRef}
+        className="navbar--container flex flex-row justify-between px-10 py-5 mx-auto bg-transparent items-center fixed top-0 w-full"
       >
-        <FontAwesomeIcon className="w-5" icon={faBars} />
-      </div>
-      <div
-        onClick={handleNav}
-        className={nav ? "flex sm:hidden p-4 z-50" : "hidden"}
-      >
-        <FontAwesomeIcon className="w-5" icon={faXmark} />
-      </div>
-      <div className="navbar--routeLinks hidden gap-4 items-center sm:flex">
-        <Link href="/about-me" className="hover:text-brand-textHover">
-          About Me
-        </Link>
-        <Link href="/portfolio" className="hover:text-brand-textHover">
-          Portfolio
-        </Link>
-        <Link href="/contact-me" className="hover:text-brand-textHover">
-          Contact Me
-        </Link>
-        <Link href="/resume" className="hover:text-brand-textHover">
-          Resume
-        </Link>
-      </div>
-
-      {/* Mobile view */}
-      <div
-        ref={menuRef}
-        className={
-          nav
-            ? "fixed z-30 top-0 pt-20 right-0 left-0 bg-brand-primary flex flex-col justify-start items-center p-5 sm:hidden duration-500 ease-in"
-            : "fixed z-30 top-[-100%] right-0 left-0 bg-brand-primary flex flex-col justify-start items-center p-5 sm:hidden duration-500 ease-in"
-        }
-      >
-        <div className="flex flex-col items-center justify-center gap-5">
+        <div className="z-50 p-4">
           <Link
-            onClick={handleNav}
-            href="/about-me"
-            className="hover:text-brand-textHover"
+            href="/"
+            className="text-brand-textHeader font-primary"
+            onClick={closeMenu}
           >
+            Nathan Moon
+          </Link>
+        </div>
+
+        {/* Default view */}
+        <div
+          onClick={handleNav}
+          className={nav ? "hidden" : "flex sm:hidden p-4 z-50"}
+        >
+          <FontAwesomeIcon className="w-5" icon={faBars} />
+        </div>
+        <div
+          onClick={handleNav}
+          className={nav ? "flex sm:hidden p-4 z-50" : "hidden"}
+        >
+          <FontAwesomeIcon className="w-5" icon={faXmark} />
+        </div>
+        <div className="navbar--routeLinks hidden gap-4 items-center sm:flex">
+          <Link href="/about-me" className="hover:text-brand-textHover">
             About Me
           </Link>
-          <Link
-            onClick={handleNav}
-            href="/portfolio"
-            className="hover:text-brand-textHover"
-          >
+          <Link href="/portfolio" className="hover:text-brand-textHover">
             Portfolio
           </Link>
-          <Link
-            onClick={handleNav}
-            href="/contact-me"
-            className="hover:text-brand-textHover"
-          >
+          <Link href="/contact-me" className="hover:text-brand-textHover">
             Contact Me
           </Link>
-          <Link
-            onClick={handleNav}
-            href="/resume"
-            className="hover:text-brand-textHover"
-          >
+          <Link href="/resume" className="hover:text-brand-textHover">
             Resume
           </Link>
         </div>
-      </div>
-    </nav>
+
+        {/* Mobile view */}
+        <div
+          ref={menuRef}
+          className={
+            nav
+              ? "fixed z-30 top-0 pt-20 right-0 left-0 bg-brand-primary flex flex-col justify-start items-center p-5 sm:hidden duration-500 ease-in"
+              : "fixed z-30 top-[-100%] right-0 left-0 bg-brand-primary flex flex-col justify-start items-center p-5 sm:hidden duration-500 ease-in"
+          }
+        >
+          <div className="flex flex-col items-center justify-center gap-5">
+            <Link
+              onClick={handleNav}
+              href="/about-me"
+              className="hover:text-brand-textHover"
+            >
+              About Me
+            </Link>
+            <Link
+              onClick={handleNav}
+              href="/portfolio"
+              className="hover:text-brand-textHover"
+            >
+              Portfolio
+            </Link>
+            <Link
+              onClick={handleNav}
+              href="/contact-me"
+              className="hover:text-brand-textHover"
+            >
+              Contact Me
+            </Link>
+            <Link
+              onClick={handleNav}
+              href="/resume"
+              className="hover:text-brand-textHover"
+            >
+              Resume
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 }
