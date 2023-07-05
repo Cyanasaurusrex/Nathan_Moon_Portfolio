@@ -18,8 +18,6 @@ export default function Resume() {
 
   return(
     <div>
-      <p>Resume<br/>-----------</p>
-      <p>view</p>
-      <button id="downloadBtn">Download</button>
+      <button id="downloadBtn" className=" bg-brand-primary text-brand-accent p-1 px-2 rounded-lg hover:bg-brand-teriary">Download Resume</button>
     </div>) 
 }

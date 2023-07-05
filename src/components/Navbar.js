@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Link as ScrollLink } from 'react-scroll';
 import { useState, useEffect, useRef } from "react";
 import "tailwindcss/tailwind.css";
 
@@ -55,23 +56,28 @@ export default function Navbar() {
   return (
     <div>
       {/* Spacer div */}
-      <div className=" pb-20" />
+      <div className=" pb-20"  id="aboutMe"/>
       {/* Navbar */}
       <nav
         ref={navbarRef}
-        className="navbar--container flex flex-row justify-between px-10 py-5 mx-auto bg-transparent items-center fixed top-0 w-full"
+        className="navbar--container flex flex-row justify-between px-10 py-4 mx-auto bg-brand-primary items-center fixed top-0 w-full z-50"
       >
-        <div className="z-50 p-4">
-          <Link
-            href="/"
-            className="text-brand-textHeader font-primary"
-            onClick={closeMenu}
-          >
-            Nathan Moon
-          </Link>
+        <div className="z-40 p-4 pl-0">
+          <ScrollLink
+          className="cursor-pointer text-brand-textHeader text-xl font-primary hover:text-brand-textHightlight"
+          onClick={closeMenu}
+              activeClass="active"
+              to="aboutMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Nathan Moon
+            </ScrollLink>
         </div>
 
-        {/* Default view */}
+        {/* Nav Toggles */}
         <div
           onClick={handleNav}
           className={nav ? "hidden" : "flex sm:hidden p-4 z-50"}
@@ -84,19 +90,42 @@ export default function Navbar() {
         >
           <FontAwesomeIcon className="w-5" icon={faXmark} />
         </div>
+
+        {/* Default view */}
         <div className="navbar--routeLinks hidden gap-4 items-center sm:flex">
-          <Link href="/about-me" className="hover:text-brand-textHover">
-            About Me
-          </Link>
-          <Link href="/portfolio" className="hover:text-brand-textHover">
-            Portfolio
-          </Link>
-          <Link href="/contact-me" className="hover:text-brand-textHover">
-            Contact Me
-          </Link>
-          <Link href="/resume" className="hover:text-brand-textHover">
-            Resume
-          </Link>
+        <ScrollLink
+          className="cursor-pointer text-brand-accent hover:text-brand-textHover"
+              activeClass="active"
+              to="aboutMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              About Me
+            </ScrollLink>
+            <ScrollLink
+          className="cursor-pointer text-brand-accent hover:text-brand-textHover"
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Portfolio
+            </ScrollLink>    
+          <ScrollLink
+          className="cursor-pointer text-brand-accent hover:text-brand-textHover pr-5"
+              activeClass="active"
+              to="ContactMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Contact Me
+            </ScrollLink>
         </div>
 
         {/* Mobile view */}
@@ -109,34 +138,42 @@ export default function Navbar() {
           }
         >
           <div className="flex flex-col items-center justify-center gap-5">
-            <Link
-              onClick={handleNav}
-              href="/about-me"
-              className="hover:text-brand-textHover"
+          <ScrollLink
+          className="cursor-pointer text-brand-accent hover:text-brand-textHover"
+          onClick={handleNav}
+              activeClass="active"
+              to="aboutMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
             >
               About Me
-            </Link>
-            <Link
-              onClick={handleNav}
-              href="/portfolio"
-              className="hover:text-brand-textHover"
+            </ScrollLink>
+            <ScrollLink
+          className="cursor-pointer text-brand-accent hover:text-brand-textHover"
+          onClick={handleNav}
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
             >
               Portfolio
-            </Link>
-            <Link
-              onClick={handleNav}
-              href="/contact-me"
-              className="hover:text-brand-textHover"
+            </ScrollLink>
+            <ScrollLink
+          className="cursor-pointer text-brand-accent hover:text-brand-textHover"
+          onClick={handleNav}
+              activeClass="active"
+              to="contactMe"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
             >
               Contact Me
-            </Link>
-            <Link
-              onClick={handleNav}
-              href="/resume"
-              className="hover:text-brand-textHover"
-            >
-              Resume
-            </Link>
+            </ScrollLink>
           </div>
         </div>
       </nav>
