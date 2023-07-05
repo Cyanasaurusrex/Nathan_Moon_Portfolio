@@ -5,7 +5,7 @@ export default function Resume() {
   useEffect(() => {
     const handleDownload = () => {
       const fileUrl = "/static/Nathan_Moon_Resume.pdf";
-      saveAs(fileUrl, "resume.pdf");
+      saveAs(fileUrl, "Nathan_Moon_Resume.pdf");
     };
 
     const button = document.getElementById("downloadBtn");

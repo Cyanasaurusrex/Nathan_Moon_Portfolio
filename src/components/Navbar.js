@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link as ScrollLink } from "react-scroll";
@@ -133,8 +132,8 @@ export default function Navbar() {
           ref={menuRef}
           className={
             nav
-              ? "fixed z-30 top-0 pt-20 right-0 left-0 bg-brand-primary flex flex-col justify-start items-center p-5 sm:hidden duration-500 ease-in"
-              : "fixed z-30 top-[-100%] right-0 left-0 bg-brand-primary flex flex-col justify-start items-center p-5 sm:hidden duration-500 ease-in"
+              ? "fixed z-30 top-0 pt-20 right-0 left-0 bg-brand-primary flex flex-col justify-start items-center p-5 sm:hidden duration-300"
+              : "fixed z-30 top-[-100%] right-0 left-0 bg-brand-primary flex flex-col justify-start items-center p-5 sm:hidden duration-300"
           }
         >
           <div className="flex flex-col items-center justify-center gap-5">

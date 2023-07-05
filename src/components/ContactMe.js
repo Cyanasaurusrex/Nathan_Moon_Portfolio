@@ -16,7 +16,7 @@ const HoverIcon = ({ icon, color, onClick }) => {
   };
 
   const handleEmailClick = () => {
-    const emailAddress = "example@example.com";
+    const emailAddress = "nathan.moon.dev@gmail.com";
 
     navigator.clipboard
       .writeText(emailAddress)
