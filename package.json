@@ -1,5 +1,5 @@
 {
-  "name": "Nathan_Moon_Portfolio",
+  "name": "nathan_moon_portfolio",
   "version": "0.1.0",
   "description": "Professional's Portfolio Site used to solicit services",
   "private": true,
@@ -18,12 +18,16 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
+    "file-saver": "^2.0.5",
     "lodash": "^4.17.21",
     "next": "^13.2.3",
+    "next-auth": "^4.22.1",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2"
+    "react-pdf": "^7.1.2",
+    "tailwindcss": "3.3.2",
+    "utf-8-validate": "^6.0.3"
   },
   "repository": {
     "type": "git",
