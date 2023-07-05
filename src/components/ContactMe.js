@@ -50,7 +50,7 @@ const HoverIcon = ({ icon, color, onClick }) => {
   );
 };
 
-const MyComponent = () => {
+export default function ContactMe() {
   const handleGithubClick = () => {
     window.open("https://github.com/Cyanasaurusrex/", "_blank");
   };
@@ -60,7 +60,7 @@ const MyComponent = () => {
   };
 
   return (
-    <div className="m-4 mb-8 mx-auto max-w-[1400px] bg-brand-secondary p-4 rounded-lg">
+    <div id="contactMe" className="m-4 mb-8 mx-auto max-w-[1400px] bg-brand-secondary p-4 rounded-lg">
       <h1 className="text-center text-brand-textHightlight pb-5"> Contact Me</h1>
       <div className="flex flex-row justify-center">
         <HoverIcon
@@ -78,5 +78,3 @@ const MyComponent = () => {
     </div>
   );
 };
-
-export default MyComponent;
