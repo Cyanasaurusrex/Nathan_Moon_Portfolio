@@ -17,7 +17,7 @@ export default function Template( props ) {
       };
 
       const techItems = props.tech.map((item, index) => (
-        <p key={index} className=" bg-brand-gamma rounded-lg p-1 pb-0">
+        <p key={index} className=" bg-brand-gamma rounded-lg p-1 px-2 pb-0">
           {item}
         </p>
       ));
