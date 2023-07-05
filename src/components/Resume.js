@@ -16,5 +16,10 @@ export default function Resume() {
     };
   }, []);
 
-  return <button id="downloadBtn">Download PDF</button>;
+  return(
+    <div>
+      <p>Resume<br/>-----------</p>
+      <p>view</p>
+      <button id="downloadBtn">Download</button>
+    </div>) 
 }
