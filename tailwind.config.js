@@ -29,7 +29,8 @@ module.exports = {
       colors: {
         brand: {
           primary: "#030712",
-          secondary: "#22d3ee",
+          secondary: "#1f2937",
+          teriary: '#374151',
           accent: "#f97316",
           textBody: "#d1d5db",
           textHeader: "#ffffff",
