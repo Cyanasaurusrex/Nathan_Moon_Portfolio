@@ -95,7 +95,7 @@ export default [
   {
     id: "9",
     projectTitle: "SVG Generator",
-    imgSrc: "/images/SVGGenerator.png",
+    imgSrc: "/images/SVGgenerator.png",
     desc: "Generate a SVG file for custom logo based on text entry. ",
     tech: ["Javascript", "SVG", "Node"],
     AppURL: "https://github.com/Cyanasaurusrex/SVG-Logo-Maker",
