@@ -31,12 +31,14 @@ module.exports = {
           primary: "#030712",
           secondary: "#1f2937",
           teriary: '#374151',
+          gamma: '#6b7280',
           accent: "#06b6d4",
           textBody: "#d1d5db",
           textHeader: "#ffffff",
           textHover: "#f9fafb",
           textActive: "#0891b2",
           textHightlight: "#f97316",
+          
         },
       },
       fontFamily: {

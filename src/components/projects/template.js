@@ -1,9 +1,8 @@
-"use client"
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
-import Page from '../Portfolio'
+
 
 
 
@@ -16,6 +15,12 @@ export default function Template( props ) {
       const handleGithubClick = () => {
         window.open(`${props.gitHubURL}`, "_blank");
       };
+
+      const techItems = props.tech.map((item, index) => (
+        <p key={index} className=" bg-brand-gamma rounded-lg p-1 pb-0">
+          {item}
+        </p>
+      ));
 
       return(
       <div
@@ -44,6 +49,9 @@ export default function Template( props ) {
         <p>
            {props.desc}
         </p>
+        <div className="flex flex-row flex-wrap gap-3 p-2 pb-0">
+        {techItems}
+        </div>
       </div>
     </div>
       )
