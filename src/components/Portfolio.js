@@ -1,6 +1,5 @@
 "use Client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 
@@ -15,7 +14,7 @@ export default function Portfolio() {
 
   return (
     // all cards
-    <div id="portfolio" className="grid  grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-6 mt-10 m-4 mx-auto max-w-[1500px]">
+    <div id="portfolio" className="grid  grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 m-4 mx-auto max-w-[1500px]">
       {/* project 1 card*/}
       <div
         onClick={handleClick}

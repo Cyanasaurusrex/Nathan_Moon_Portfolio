@@ -118,7 +118,7 @@ export default function Navbar() {
           <ScrollLink
           className="cursor-pointer text-brand-accent hover:text-brand-textHover pr-5"
               activeClass="active"
-              to="ContactMe"
+              to="contactMe"
               spy={true}
               smooth={true}
               offset={-70}
