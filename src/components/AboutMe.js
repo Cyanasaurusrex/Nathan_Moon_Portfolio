@@ -4,7 +4,7 @@ import Resume from "./Resume";
 
 export default function AboutMe() {
   return (
-    <div className="flex flex-col sm:flex-row m-4 mb-8 mx-auto max-w-[1400px] bg-brand-secondary p-4 rounded-lg">
+    <div className="flex flex-col sm:flex-row m-4 mb-8 mx-auto max-w-[1450px] bg-brand-secondary p-4 rounded-lg">
       <div className="mx-auto my-auto flex-shrink-0">
         <Image
           alt="Picture of myself, Nathan Moon"

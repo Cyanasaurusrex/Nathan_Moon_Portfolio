@@ -25,7 +25,7 @@ export default function Template( props ) {
       return(
       <div
       onClick={handleAppClick}
-      className=" bg-brand-secondary mx-auto mb-5 p-4 rounded-xl w-4/5 cursor-pointer hover:bg-brand-teriary"
+      className=" bg-brand-secondary mx-auto mb-7 p-4 rounded-xl cursor-pointer w-11/12 hover:bg-brand-teriary"
     >
       {/* picture */}
       <Image

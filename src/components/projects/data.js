@@ -20,7 +20,7 @@ export default [
   {
     id: "2",
     projectTitle: "OIO Dev",
-    imgSrc: "/images/underConstruction.png",
+    imgSrc: "/images/OIODev.png",
     desc: "Connect with skilled Technology Professionals who specialize in creating exceptional websites and server applications. We bring your digital vision to life!",
     tech: [
       "Javascript",
